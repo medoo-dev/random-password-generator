@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background-color: #14131a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+ 
+    background-color: #24232b;
+    border-radius: 12px;
+    padding: 30px;
+    width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: #a4a4a4;
+
+    
+}
+
+.container div:first-of-type{
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    border-radius: 6px;
+}
+#password {
+    background: #18171f;
+    border: none;
+    color: #fff;
+    font-size: clamp(12px, 1vw, 18px);
+    padding: 12px;
+    width: 100%;
+ 
+    letter-spacing: 1px;
+}
+
+#copy {
+    position: absolute;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #a4ffaf;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #18171f;
+    height: 100%;
+}
+
+.range-block {
+    margin-bottom: 20px;
+    display: flex;
+    margin: 0 25px;
+    gap: 10px;
+}
+
+.range-block label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+input[type="range"] {
+    width: calc(100% - 50px);
+    accent-color: #a4ffaf;
+  
+    
+}
+
+.checks {
+    margin-bottom: 20px;
+}
+
+.checks label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.checks input {
+    accent-color: #a4ffaf;
+}
+
+.strength {
+    background-color: #18171f;
+    color: #ccc;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 12px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bars {
+    display: flex;
+    gap: 4px;
+}
+
+.bars div {
+    width: 6px;
+    height: 20px;
+    background: #a4ffaf;
+}
+
+button#gen {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #a4ffaf;
+    color: #14131a;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button#gen:hover {
+    background-color: #c1ffd7;
+}

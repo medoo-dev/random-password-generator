@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="password generator, strong password, secure password, random password, generate password, create secure password"
+    />
+
+    <meta name="description" content="Create A Random Password For Free" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./reset-password.png" type="image/x-icon" />
+
+    <title>Random Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div>
+        <input
+          type="text"
+          id="password"
+          readonly
+          aria-labelledby="password"
+          aria-label="password"
+          accesskey="p"
+        
+          />
+        <button id="copy">Copy</button>
+      </div>
+
+      <div class="range-block">
+        <p id="lengthDisplay">15</p>
+        <input type="range" id="length" min="10" max="35" value="15" />
+      </div>
+
+      <div class="checks">
+        <label
+          ><input type="checkbox" data-type="nums" checked /> Numbers</label
+        >
+        <label
+          ><input type="checkbox" data-type="letters" checked /> Letters</label
+        >
+        <label
+          ><input type="checkbox" data-type="specials" checked /> Symbols</label
+        >
+      </div>
+
+      <button id="gen">Generate</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
